@@ -29,7 +29,7 @@ const getDimensions = (tier: number) => {
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center ray-olsen">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 pb-16 md:pb-20 text-center">
         {/* Greeting */}
         <h1 className="text-3xl sm:text-4xl md:text-6xl leading-[1.1] text-[#1B1B18]">
           Hi there!

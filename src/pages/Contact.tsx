@@ -1,6 +1,40 @@
-import React from 'react'
+import React, { useRef, useState } from "react";
+import { Send, Loader2 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(
+    null,
+  );
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    emailjs
+      .sendForm("service_tqmc439", "template_dkizbfj", form.current, {
+        publicKey: "LioYY1uKGcefsmdlH",
+      })
+      .then(
+        () => {
+          setSubmitStatus("success");
+          form.current?.reset();
+        },
+        () => {
+          setSubmitStatus("error");
+        },
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
+
   return (
     <div className="px-4 sm:px-8 md:px-20 py-10 md:py-12 ray-olsen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 md:px-40">
@@ -13,32 +47,38 @@ const Contact: React.FC = () => {
 
         {/* Right Side */}
         <div>
-          <form className="flex flex-col gap-5 md:gap-6">
-            {/* First & Last Name */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
-              <div className="flex flex-col gap-2">
-                <label htmlFor="firstName" className="text-black">
-                  First Name <span className="text-red-600">*</span>
-                </label>
-                <input
-                  id="firstName"
-                  type="text"
-                  required
-                  className="border border-black px-4 py-3 outline-none focus:border-black w-full"
-                />
+          <form
+            className="flex flex-col gap-5 md:gap-6"
+            ref={form}
+            onSubmit={sendEmail}
+          >
+            {submitStatus === "success" && (
+              <div className="p-4 bg-zinc-900/50 backdrop-blur-sm rounded-lg border border-green-500/20 animate-slideDown">
+                <p className="text-green-400">
+                  Thank you for your message! I'll get back to you soon.
+                </p>
               </div>
+            )}
+            {submitStatus === "error" && (
+              <div className="p-4 bg-zinc-900/50 backdrop-blur-sm rounded-lg border border-red-500/20 animate-slideDown">
+                <p className="text-red-400">
+                  There was an error sending your message. Please try again.
+                </p>
+              </div>
+            )}
+            {/*Name */}
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="lastName" className="text-black">
-                  Last Name <span className="text-red-600">*</span>
-                </label>
-                <input
-                  id="lastName"
-                  type="text"
-                  required
-                  className="border border-black px-4 py-3 outline-none focus:border-black w-full"
-                />
-              </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="Name" className="text-black">
+                Name <span className="text-red-600">*</span>
+              </label>
+              <input
+                id="user_name"
+                name="user_name"
+                type="user_name"
+                required
+                className="border border-black px-4 py-3 outline-none focus:border-black w-full"
+              />
             </div>
 
             {/* Email */}
@@ -47,22 +87,11 @@ const Contact: React.FC = () => {
                 Email <span className="text-red-600">*</span>
               </label>
               <input
-                id="email"
-                type="email"
+                id="user_email"
+                type="user_email"
+                name="user_email"
                 required
-                className="border border-black px-4 py-3 outline-none focus:border-black w-full"
-              />
-            </div>
-
-            {/* Subject */}
-            <div className="flex flex-col gap-2">
-              <label htmlFor="subject">
-                Subject <span className="text-red-600">*</span>
-              </label>
-              <input
-                id="subject"
-                type="text"
-                required
+                disabled={isSubmitting}
                 className="border border-black px-4 py-3 outline-none focus:border-black w-full"
               />
             </div>
@@ -74,8 +103,10 @@ const Contact: React.FC = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 required
                 rows={7}
+                disabled={isSubmitting}
                 className="border border-black px-4 py-3 outline-none resize-none focus:border-black w-full"
               ></textarea>
             </div>
@@ -83,15 +114,26 @@ const Contact: React.FC = () => {
             {/* Button */}
             <button
               type="submit"
-              className="w-full sm:w-fit bg-black text-white px-8 py-3 border border-black transition-all duration-300 cursor-pointer hover:bg-white hover:text-black"
+              disabled={isSubmitting}
+              className="cursor-pointer w-full flex items-center justify-center gap-2 px-6 py-3 bg-zinc-900 hover:bg-zinc-800 border-2 border-zinc-800 hover:border-zinc-700 disabled:bg-zinc-900 disabled:cursor-not-allowed text-zinc-100 font-medium rounded-lg transition-all duration-300 ease-out animate-slideUp"
             >
-              Submit
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  <span className="animate-pulse">Sending...</span>
+                </>
+              ) : (
+                <>
+                  <Send className="w-5 h-5" />
+                  Send Message
+                </>
+              )}
             </button>
           </form>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
