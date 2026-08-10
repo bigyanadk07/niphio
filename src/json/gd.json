@@ -1,0 +1,46 @@
+[
+    {
+        "title" : "reDrift",
+        "genre" : "Top-Down Explorer",
+        "description" : " Designed and implemented AI-driven enemy behavior using A* pathfinding and algorithmic decision-making ina 2D environment.Applied performance optimization and system logic principles to support dynamic gameplay and narrative-driven interactions.",
+        "preview" : "https://cdn.discordapp.com/attachments",
+        "thumbnail" : "/images/game-dev-1.jpg",
+        "engine" : "Godot 4.0",
+        "additional-notes" : "Game Developed for first iteration",
+        "reference-date" : "2024-10-01",
+        "github" : "https://github.com/bigyanadk07/food-quality-classifier"
+    },
+    {
+        "title" : "reDrift",
+        "genre" : "Top-Down Explorer",
+        "description" : " Designed and implemented AI-driven enemy behavior using A* pathfinding and algorithmic decision-making ina 2D environment.Applied performance optimization and system logic principles to support dynamic gameplay and narrative-driven interactions.",
+        "preview" : "https://cdn.discordapp.com/attachments",
+        "thumbnail" : "/images/game-dev-2.jpg",
+        "engine" : "Godot 4.0",
+        "additional-notes" : "Game Developed for first iteration",
+        "reference-date" : "2024-10-01",
+        "github" : "https://github.com/bigyanadk07/food-quality-classifier"
+    },
+    {
+        "title" : "reDrift",
+        "genre" : "Top-Down Explorer",
+        "description" : " Designed and implemented AI-driven enemy behavior using A* pathfinding and algorithmic decision-making ina 2D environment.Applied performance optimization and system logic principles to support dynamic gameplay and narrative-driven interactions.",
+        "preview" : "https://cdn.discordapp.com/attachments",
+        "thumbnail" : "/images/game-dev-3.jpg",
+        "engine" : "Godot 4.0",
+        "additional-notes" : "Game Developed for first iteration",
+        "reference-date" : "2024-10-01",
+        "github" : "https://github.com/bigyanadk07/food-quality-classifier"
+    },
+    {
+        "title" : "reDrift",
+        "genre" : "Top-Down Explorer",
+        "description" : " Designed and implemented AI-driven enemy behavior using A* pathfinding and algorithmic decision-making ina 2D environment.Applied performance optimization and system logic principles to support dynamic gameplay and narrative-driven interactions.",
+        "preview" : "https://cdn.discordapp.com/attachments",
+        "thumbnail" : "/images/game-dev-4.jpg",
+        "engine" : "Godot 4.0",
+        "additional-notes" : "Game Developed for first iteration",
+        "reference-date" : "2024-10-01",
+        "github" : "https://github.com/bigyanadk07/food-quality-classifier"
+    }
+]

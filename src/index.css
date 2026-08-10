@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Fonts */
+
+
+@font-face {
+    font-family: 'Ray-Olsen';
+    src: url('/fonts/ray-olsen.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .ray-olsen{
+    font-family: 'ray-olsen', sans-serif;
+ }
+
+ /* Background Colors */
+
+.ray-bg { 
+  background-color:#f2f5f6;
+}

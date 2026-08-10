@@ -1,0 +1,57 @@
+[
+    {
+        "title" : "Food Quality Classification System",
+        "genre" : "Machine Learning Project",
+        "description" : "Implemented an image-based food quality classification system using Vision Transformer models and transferlearning techniques.Built an inference API using FastAPI, with consideration for data quality, model bias, and reliability limitations.",
+        "preview" : "",
+        "thumbnail" : "../images/sd-1.jpg",
+        "engine" : "",
+        "additional-notes" : "",
+        "reference-date" : "",
+        "github" : "https://github.com/bigyanadk07/food-quality-classifier"
+    },
+    {
+        "title" : "BugTracker",
+        "genre" : "Issue Tracking Tool",
+        "description" : "Developed a RESTful backend system featuring JWT-based authentication, role-based access control, andsecure issue lifecycle management.Optimized data retrieval using MongoDB with filtering, pagination, and access control enforcement.",
+        "preview" : "",
+        "thumbnail" : "../images/sd-2.jpg",
+        "engine" : "",
+        "additional-notes" : "",
+        "reference-date" : "",
+        "github" : "https://github.com/bigyanadk07/bugtracker-bcknd"
+    },
+     { 
+        "title": "Neo", 
+        "genre": "Note-taking / Productivity Web App", 
+        "description": "A minimalist Notion-inspired note-taking workspace built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui components.", 
+        "preview": "", 
+        "thumbnail": "../images/sd-3.jpg", 
+        "engine": "Vite, React 18, TypeScript, Tailwind CSS, shadcn/ui, Editor.js", 
+        "additional-notes": "Project metadata from index.html shows a Notion-like workspace. package.json is a Vite React + shadcn/ui starter with Editor.js plugins. README.md is empty.", 
+        "reference-date": "2026-08-10", 
+        "github": "https://github.com/bigyanadk07/neo.git" 
+    },
+    {
+        "title" : "getMEAPI",
+        "genre" : "API Management and Tracking Platform",
+        "description" : "Designed and implemented a secure backend platform with JWT-based authentication, role-based accesscontrol (RBAC), and rate limiting to manage tiered API subscriptions.Integrated Redis for session and quota management and background job processing to improve scalability and system performance.",
+        "preview" : "",
+        "thumbnail" : "../images/sd-4.jpg",
+        "engine" : "",
+        "additional-notes" : "",
+        "reference-date" : "",
+        "github" : "https://github.com/bigyanadk07/APIStoreBackend"
+    },
+    {
+        "title" : "Sera UI",
+        "genre" : "Plug-n-Play UI Component Library",
+        "description" : "Sera is the open-source Tailwind and CSS library for the modern web. It provides a collection of professionally designed, fully responsive Tailwind & CSS components that help developers and designers create stunning UIs with minimal effort.",
+        "preview" : "",
+        "thumbnail" : "../images/sd-5.jpg",
+        "engine" : "",
+        "additional-notes" : "",
+        "reference-date" : "",
+        "github" : "https://github.com/bigyanadk07/seraui"
+    }
+]
