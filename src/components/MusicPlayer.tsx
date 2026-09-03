@@ -11,7 +11,8 @@ const tracks: Track[] = [
   { src: '/audio/Until I End Up Dead.mp3', artist: 'Dream' },
   { src: '/audio/Mr. Man.mp3', artist: 'Stephen' },
   { src: '/audio/Youth.mp3 ', artist: 'Glass Animals'},
-  { src: '/audio/Tongues.mp3 ', artist: 'Joywave'}
+  { src: '/audio/Tongues.mp3 ', artist: 'Joywave'},
+  {src : '/audio/Last Shot.mp3' , artist : 'Templuv & Aidan'}
 ]
 
 const getTitleFromFilename = (src: string) => {

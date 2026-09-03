@@ -1,57 +1,157 @@
 [
     {
-        "title" : "Food Quality Classification System",
-        "genre" : "Machine Learning Project",
-        "description" : "Implemented an image-based food quality classification system using Vision Transformer models and transferlearning techniques.Built an inference API using FastAPI, with consideration for data quality, model bias, and reliability limitations.",
-        "preview" : "",
-        "thumbnail" : "../images/sd-1.jpg",
-        "engine" : "",
-        "additional-notes" : "",
-        "reference-date" : "",
-        "github" : "https://github.com/bigyanadk07/food-quality-classifier"
+        "title": "Food Quality Classification System",
+        "genre": "Machine Learning Project",
+        "description": "An image-based food quality classification system using Vision Transformer models and transfer learning, with a FastAPI inference service for serving predictions.",
+        "preview": "",
+        "thumbnail": "../images/sd-1.jpg",
+        "engine": "Python, Vision Transformer, Transfer Learning, FastAPI",
+        "additional-notes": "",
+        "reference-date": "",
+        "github": "https://github.com/bigyanadk07/food-quality-classifier",
+        "case-study": {
+            "overview": "This project explores image-based food quality classification using modern computer vision techniques. The system uses Vision Transformer models and transfer learning to classify food images while exposing the trained model through an inference API.",
+            "problem": "Food quality classification from images is influenced by factors such as image quality, dataset composition, and visual differences between food samples. The project focused on building a practical classification pipeline while considering the limitations introduced by data quality and model bias.",
+            "solution": "A Vision Transformer-based classification approach was implemented using transfer learning to leverage an existing pretrained model. The trained model was then exposed through a FastAPI inference service so that predictions could be consumed programmatically.",
+            "features": [
+                "Image-based food quality classification",
+                "Vision Transformer model",
+                "Transfer learning",
+                "FastAPI inference API",
+                "Model inference pipeline",
+                "Consideration of data quality and model bias",
+                "Reliability considerations for predictions"
+            ],
+            "technical": "The system combines a computer vision model with an API layer. Images are passed through the inference pipeline and processed by the trained Vision Transformer model before returning the classification result through FastAPI.",
+            "challenges": "A major consideration was the reliability of image-based predictions. Dataset quality, visual variation, and potential model bias can directly influence classification performance, making model evaluation and responsible interpretation important parts of the project.",
+            "learnings": "The project provided practical experience with transfer learning, Vision Transformer architectures, model inference, API-based model serving, and the limitations that need to be considered when deploying machine learning systems."
+        }
     },
     {
-        "title" : "BugTracker",
-        "genre" : "Issue Tracking Tool",
-        "description" : "Developed a RESTful backend system featuring JWT-based authentication, role-based access control, andsecure issue lifecycle management.Optimized data retrieval using MongoDB with filtering, pagination, and access control enforcement.",
-        "preview" : "",
-        "thumbnail" : "../images/sd-2.jpg",
-        "engine" : "",
-        "additional-notes" : "",
-        "reference-date" : "",
-        "github" : "https://github.com/bigyanadk07/bugtracker-bcknd"
-    },
-     { 
-        "title": "Neo", 
-        "genre": "Note-taking / Productivity Web App", 
-        "description": "A minimalist Notion-inspired note-taking workspace built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui components.", 
-        "preview": "", 
-        "thumbnail": "../images/sd-3.jpg", 
-        "engine": "Vite, React 18, TypeScript, Tailwind CSS, shadcn/ui, Editor.js", 
-        "additional-notes": "Project metadata from index.html shows a Notion-like workspace. package.json is a Vite React + shadcn/ui starter with Editor.js plugins. README.md is empty.", 
-        "reference-date": "2026-08-10", 
-        "github": "https://github.com/bigyanadk07/neo.git" 
-    },
-    {
-        "title" : "getMEAPI",
-        "genre" : "API Management and Tracking Platform",
-        "description" : "Designed and implemented a secure backend platform with JWT-based authentication, role-based accesscontrol (RBAC), and rate limiting to manage tiered API subscriptions.Integrated Redis for session and quota management and background job processing to improve scalability and system performance.",
-        "preview" : "",
-        "thumbnail" : "../images/sd-4.jpg",
-        "engine" : "",
-        "additional-notes" : "",
-        "reference-date" : "",
-        "github" : "https://github.com/bigyanadk07/APIStoreBackend"
+        "title": "Neo",
+        "genre": "Note-taking / Productivity Web App",
+        "description": "A minimalist, Notion-inspired productivity workspace built around rich-text editing, structured notes, and a modern component-based interface.",
+        "preview": "",
+        "thumbnail": "../images/sd-3.jpg",
+        "engine": "Vite, React 18, TypeScript, Tailwind CSS, shadcn/ui, Editor.js",
+        "additional-notes": "",
+        "reference-date": "2026-08-10",
+        "github": "https://github.com/bigyanadk07/neo.git",
+        "case-study": {
+            "overview": "Neo is a minimalist productivity workspace inspired by tools such as Notion. The project focuses on creating a structured note-taking experience using a modern React and TypeScript frontend.",
+            "problem": "Traditional note-taking interfaces can become cluttered as the amount of information grows. The goal was to create a cleaner workspace that combines structured content with a flexible editing experience.",
+            "solution": "Neo uses a component-based React interface with Tailwind CSS and shadcn/ui components, alongside Editor.js for rich content editing. The application is built with Vite and TypeScript for a modern frontend development workflow.",
+            "features": [
+                "Notion-inspired workspace",
+                "Rich-text editing",
+                "Component-based interface",
+                "Responsive UI",
+                "TypeScript-based React application",
+                "Tailwind CSS styling",
+                "shadcn/ui components",
+                "Editor.js integration"
+            ],
+            "technical": "The application is structured around React components and TypeScript, with Vite providing the development and build environment. Tailwind CSS and shadcn/ui provide the interface foundation while Editor.js handles rich-text content editing.",
+            "challenges": "Creating a productivity interface requires balancing flexibility with a clean visual hierarchy. Integrating a rich-text editor into a component-based application also requires careful handling of the editing experience and surrounding UI.",
+            "learnings": "The project provided experience with React component architecture, TypeScript, modern UI component systems, rich-text editing, and building productivity-oriented interfaces."
+        }
     },
     {
-        "title" : "Sera UI",
-        "genre" : "Plug-n-Play UI Component Library",
-        "description" : "Sera is the open-source Tailwind and CSS library for the modern web. It provides a collection of professionally designed, fully responsive Tailwind & CSS components that help developers and designers create stunning UIs with minimal effort.",
-        "preview" : "",
-        "thumbnail" : "../images/sd-5.jpg",
-        "engine" : "",
-        "additional-notes" : "",
-        "reference-date" : "",
-        "github" : "https://github.com/bigyanadk07/seraui"
+        "title": "Nymbl API Marketplace",
+        "genre": "API Marketplace and Management Platform",
+        "description": "A full-stack API subscription and gateway platform that allows users to discover APIs, subscribe to packages, make payments, generate API access tokens, and consume protected APIs through a centralized gateway.",
+        "preview": "/public/demos/nymbl-demo.gif",
+        "thumbnail": "../images/sd-4.jpg",
+        "engine": "React, TypeScript, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, Mongoose, JWT, Redis",
+        "additional-notes": "MVP Complete / Version 1.0.0 / eSewa Test Environment",
+        "reference-date": "",
+        "github": "https://github.com/bigyanadk07/Nymbl",
+        "case-study": {
+            "overview": "Nymbl is an API subscription and gateway platform built around a complete end-to-end API consumption lifecycle. Users can discover APIs, subscribe to packages, complete payments, receive API access tokens, and consume protected APIs through a centralized gateway.",
+            "problem": "Consuming and managing APIs involves several concerns beyond simply exposing an endpoint. Authentication, subscriptions, payment status, API access, rate limits, quotas, and usage tracking all need to work together. Nymbl was built to bring these concerns into a single platform.",
+            "solution": "Nymbl provides an API marketplace where users can browse available APIs and packages, subscribe to a package, complete an eSewa test payment, generate an API token, and access protected APIs through the Nymbl gateway. The gateway validates access, enforces rate and usage limits, and records API consumption.",
+            "features": [
+                "User registration and authentication",
+                "API and package discovery",
+                "Subscription lifecycle management",
+                "eSewa test payment integration",
+                "API token generation",
+                "Protected API access",
+                "Centralized API Gateway",
+                "API token validation",
+                "Rate limiting",
+                "Quota enforcement",
+                "Usage tracking and history",
+                "API-specific usage monitoring",
+                "Subscription management",
+                "Invoice viewing"
+            ],
+            "technical": "The API Gateway acts as the central access-control layer. An incoming request is authenticated and its API token is validated before the system checks subscription status, rate limits, and usage quotas. Approved requests are passed to the API and the resulting usage is recorded for monitoring.",
+            "architecture": [
+                "User",
+                "Register / Sign In",
+                "Browse Packages & APIs",
+                "Subscribe",
+                "eSewa Payment",
+                "Subscription Activation",
+                "Generate API Token",
+                "Nymbl API Gateway",
+                "Authentication & Token Validation",
+                "Rate Limiting",
+                "Quota Enforcement",
+                "Usage Tracking",
+                "Usage & Subscription Dashboard"
+            ],
+            "challenges": "The most challenging parts involved connecting different parts of the platform into one reliable flow. Payment verification needed to correctly activate subscriptions, API tokens needed to correspond to valid subscriptions, and gateway middleware needed to enforce access and usage rules before requests reached the API.",
+            "learnings": "Nymbl provided practical experience in designing a platform around API access control rather than simple CRUD operations. It strengthened my understanding of API gateways, authentication, subscription lifecycles, payment verification, rate limiting, quota enforcement, usage tracking, and frontend-backend integration.",
+            "limitations": [
+                "OTP authentication is planned but not yet implemented",
+                "Only one API token per API is currently supported",
+                "Personal Settings is currently UI-only",
+                "Invoice functionality is currently basic",
+                "Full RBAC and admin controls are planned for Nymbl 2.0",
+                "The analytics line graph is partially incomplete",
+                "eSewa is currently configured for the test environment"
+            ],
+            "roadmap": [
+                "OTP-based authentication",
+                "Admin and RBAC system",
+                "API registration through an admin dashboard",
+                "Multiple API tokens per API",
+                "Full analytics dashboard",
+                "Proper invoice generation and PDF export",
+                "Additional billing plans",
+                "More flexible API packages"
+            ]
+        }
+    },
+    {
+        "title": "Sera UI",
+        "genre": "Plug-n-Play UI Component Library",
+        "description": "An open-source Tailwind and CSS component library providing professionally designed, responsive UI components for building modern web interfaces with minimal effort.",
+        "preview": "",
+        "thumbnail": "../images/sd-5.jpg",
+        "engine": "Next.js, React, TypeScript, Tailwind CSS, Radix UI",
+        "additional-notes": "",
+        "reference-date": "",
+        "github": "https://github.com/bigyanadk07/seraui",
+        "case-study": {
+            "overview": "Sera UI is an open-source UI component library focused on providing reusable, responsive components for modern web applications.",
+            "problem": "Building interfaces repeatedly from scratch can slow down development and lead to inconsistent design patterns across projects. Developers need reusable components that can be adapted quickly while maintaining a consistent visual system.",
+            "solution": "Sera UI provides a collection of reusable UI components built around Tailwind CSS and modern React tooling. The library is designed to give developers ready-to-use building blocks that can be integrated into their own applications.",
+            "features": [
+                "Reusable UI components",
+                "Responsive components",
+                "Tailwind CSS-based styling",
+                "Modern React component architecture",
+                "Radix UI primitives",
+                "TypeScript support",
+                "Open-source component library"
+            ],
+            "technical": "The library uses React and TypeScript for component development, Tailwind CSS for styling, and Radix UI primitives for accessible underlying interface behavior. Components are structured to be reusable across different applications.",
+            "challenges": "A component library needs to balance visual design, reusability, consistency, and customization. Components should work independently while still following a coherent design system.",
+            "learnings": "Sera UI provided experience with reusable component architecture, Tailwind CSS, TypeScript, Radix primitives, accessibility-oriented UI foundations, and designing software intended to be consumed by other developers."
+        }
     }
 ]
+
