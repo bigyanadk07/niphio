@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { GithubFill } from "akar-icons";
 
@@ -89,6 +89,10 @@ const Section: React.FC<{
 };
 
 const ProjectDetails: React.FC = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   const { slug } = useParams<{ slug: string }>();
   const location = useLocation();
   const navigate = useNavigate();
